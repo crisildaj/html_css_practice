@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <p>
+        Content
+    </p>
+    <form>
+        <fieldset>
+            <legend>Account Details</legend>
+            <br>
+            <label for="username">Username:</label>
+            <br>
+            <!-- id links the input to a label -->
+            <!-- name attribute: gives the value a key -->
+            <input type="text" name="user" id="username" required/>
+            <br>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" required/>
+            <br>
+            <label for="re">Re-enter Password:</label>
+            <br>
+            <input placeholder="same password" type="password" id="re" required/>
+            <br>
+        </fieldset>
+        <!-- <input type="button" value="Login"> -->
+        <fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+        <fieldset>
+            <legend>Other inputs</legend>
+            <label for="check">Checkbox: </label>
+            <input type="checkbox" id="check">
+            <br>
+            <label for="genderInput">Gender:</label>
+            <!-- if they have the same name, you can only select 1 -->
+            <input type="radio" name="gender" id="genderInput">M
+            <input type="radio" name="gender" id="genderInput">F
+            <input type="radio" name="gender" id="genderInput">Other
+            <br>
+            <label for="countryInput">Country: </label>
+            <select name="country" id="countryInput">
+                <!-- value shortens whats displayed in the address bar -->
+                <option value="UK">United Kingdom</option>
+                <option value="US" selected>United States</option>
+                <option value="AU">Australia</option>
+            </select>
+            <br>
+            <label for="ageInput">Age</label>
+            <input type="range" name="age" id="ageInput" min="1" max="100">
+            <input type="number" name="age" id="numInput" min="1" max="100" value="0">
+            <br>
+            <label for="bdayInput">Birthday:</label>
+            <input type="date" name="bday"id="bdayInput">
+            <br>
+            <label for="emailInput">Email:</label>
+            <br>
+            <input type="email" name="email" id="emailInput">
+        </fieldset>
+    </form>
+</body>
+</html>
